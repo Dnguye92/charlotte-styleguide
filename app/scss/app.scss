@@ -1,0 +1,72 @@
+@import "partials/variables";
+@import "partials/mixins";
+@include brand-fonts("Fira+Sans");
+@include brand-fonts("Playfair+Display");
+
+body, p  {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: $playfair;
+}
+
+h2, h3, h4, h5, h6, p{
+	font-family: $fira;
+}
+
+.text-black {
+	color: $black;
+}
+
+.text-pink {
+	color: $pink;
+}
+
+.text-white {
+	color: $white;
+}
+
+.black-bg {
+	background-color: black;
+}
+
+.white-bg {
+	background-color: #ffffff;
+}
+
+.container {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.row {
+	margin: 20px auto;
+}
+
+hr {
+	border: 1px solid $pink;
+	width: 80%;
+}
+
+.header {
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			font-family: $fira;
+			display: inline-block;
+			margin: 10px;
+			padding: 10px 20px;
+			a, a:hover, a:active {
+				color: $black;
+			}
+		}
+	}
+	img {
+		margin: 0 0 20px 0;
+	}
+}
+

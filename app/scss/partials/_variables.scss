@@ -1,0 +1,41 @@
+// FONTS
+$playfair: "Playfair Display", serif;
+$fira: "Fira Sans", sans-serif;
+
+// COLORS
+$black: black;
+$pink: #e21b70;
+$white: #ffffff;
+
+// MEDIA QUERIES
+@mixin xlarge {
+	@media only screen and (min-width: 1600px) { @content; }
+}
+
+@mixin large {
+	@media only screen and (min-width: 1280px) { @content; }
+}
+
+@mixin medium-only {
+	@media only screen and (min-width: 1024px) and (max-width: 1279px) { @content; }
+}
+
+@mixin medium {
+	@media only screen and (min-width: 1024px) { @content; }
+}
+
+@mixin small {
+	@media only screen and (min-width: 651px) { @content; }
+}
+
+@mixin xsmall {
+	@media only screen and (max-width: 650px) { @content; }
+}
+
+@mixin short {
+	@media only screen and (max-height: 500px) { @content; }
+}
+
+@mixin xshort {
+	@media only screen and (max-height: 400px) { @content; }
+}
