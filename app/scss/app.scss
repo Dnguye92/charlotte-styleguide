@@ -40,6 +40,7 @@ h2, h3, h4, h5, h6, p{
 .container {
 	margin-bottom: 20px;
 	margin-top: 40px;
+	width: 70%;
 }
 
 .row {
@@ -47,17 +48,25 @@ h2, h3, h4, h5, h6, p{
 }
 
 hr {
-	border: 1px solid $pink;
+	border-color: $pink;
+	border-width: 1px;
 	width: 80%;
 }
 
-.header {
+header {
+	background-color: $white;
+	bottom: 0;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
 	ul {
-		padding: 0;
-		margin: 0;
+		padding: 10px 10px 10px 0;
+		margin: 10px 20px 10px 0;
 		li {
 			font-family: $fira;
-			display: inline-block;
+			// display: inline-block;
+			list-style: none;
 			margin: 10px;
 			padding: 10px 20px;
 			a, a:hover, a:active {
@@ -67,6 +76,13 @@ hr {
 	}
 	img {
 		margin: 0 0 20px 0;
+		width: 200px;
 	}
+}
+
+.content {
+	margin-left: auto;
+	margin-right: 0;
+	width: 80%;
 }
 
