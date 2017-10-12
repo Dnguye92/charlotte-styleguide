@@ -47,53 +47,19 @@ h2, h3, h4, h5, h6, p{
 }
 
 hr {
-	border-color: $pink;
-	border-width: 1px;
-	width: 88%;
+	border: 1px solid $pink;
+	width: 80%;
 }
 
-header {
-	background-color: $white;
-	text-align: center;
-	@include small {
-		bottom: 0;
-		min-width: 150px;
-		padding: 20px;
-		position: fixed;
-		text-align: left;
-		top: 0;
-		z-index: 2;
-		width: 20%;
-	}
+.header {
 	ul {
-		padding-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 10px;
-		margin-bottom: 10px;
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-top: 10px;
-
-		@include small {
-			margin-left: 0;
-			padding-left: 0;
-		}
+		padding: 0;
+		margin: 0;
 		li {
 			font-family: $fira;
 			display: inline-block;
-			list-style: none;
-			margin-bottom: 10px;
-			margin-left: 10px;
-			margin-right: 10px;
-			margin-top: 10px;
-			padding-bottom: 10px;
-			padding-left: 20px;
-			padding-right: 20px;
-			padding-top: 10px;
-			@include small {
-				display: block;
-			}
+			margin: 10px;
+			padding: 10px 20px;
 			a, a:hover, a:active {
 				color: $black;
 			}
@@ -101,16 +67,6 @@ header {
 	}
 	img {
 		margin: 0 0 20px 0;
-		width: 200px;
-	}
-}
-
-.content {
-	margin-left: auto;
-	margin-right: 0;
-	width: 100%;
-	@include small {
-		width: 73%;
 	}
 }
 
