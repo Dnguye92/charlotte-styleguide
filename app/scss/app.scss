@@ -13,7 +13,15 @@ h1 {
 	font-family: $playfair;
 }
 
-h2, h3, h4, h5, h6, p{
+h2 {
+	font-family: $fira;
+}
+
+.text-playfair {
+	font-family: $playfair;
+}
+
+.text-fira {
 	font-family: $fira;
 }
 
@@ -47,26 +55,80 @@ h2, h3, h4, h5, h6, p{
 }
 
 hr {
-	border: 1px solid $pink;
+	border-color: $pink;
+	border-width: 1px;
 	width: 80%;
 }
 
-.header {
+header {
+	background-color: $white;
+	text-align: center;
+	@include small {
+		bottom: 0;
+		min-width: 200px;
+		padding: 20px;
+		position: fixed;
+		text-align: left;
+		top: 0;
+		width: 23%;
+		z-index: 2;
+	}
 	ul {
-		padding: 0;
-		margin: 0;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		text-align: center;
+		@include small {
+			margin-left: 0;
+			padding-left: 0;
+			text-align: left;
+		}
 		li {
+			border-radius: 2px;
 			font-family: $fira;
 			display: inline-block;
-			margin: 10px;
-			padding: 10px 20px;
+			list-style: none;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			transition: all 0.2s ease-out;
+			&:hover {
+				background-color: $pink;
+			}
+			@include small {
+				display: block;
+			}
 			a, a:hover, a:active {
 				color: $black;
+				text-decoration: none;
 			}
 		}
 	}
 	img {
 		margin: 0 0 20px 0;
+		width: 200px;
+	}
+}
+
+.content {
+	width: 100%;
+	margin-right: 0;
+	margin-left: auto;
+	@include small {
+		width: 74%;
+	}
+
+	#typography {
+		img {
+			margin: 30px;
+			width: 450px;
+		}
 	}
 }
 
