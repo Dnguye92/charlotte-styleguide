@@ -2,8 +2,8 @@
 
 ### Running Local Dev Environment
 ```
-$ git clone https://github.com/Dnguye92/charlotte-stage.git
-$ cd charlotte-stage
+$ git clone https://github.com/Dnguye92/charlotte-styleguide.git
+$ cd charlotte-styleguide
 $ npm install
 $ gulp
 ```
